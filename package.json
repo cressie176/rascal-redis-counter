@@ -28,5 +28,17 @@
     "forward-emitter": "^0.1.1",
     "lodash.defaultsdeep": "^4.6.0",
     "redis": "^2.8.0"
-  }
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cressie176/rascal-redis-counter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cressie176/rascal-redis-counter/issues"
+  },
+  "homepage": "https://github.com/cressie176/rascal-redis-counter#readme"
 }
