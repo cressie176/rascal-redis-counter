@@ -1,5 +1,5 @@
 var redis = require('redis');
-var defaults = require('lodash.defaultsDeep');
+var defaults = require('lodash.defaultsdeep');
 
 module.exports = function init(options) {
 
