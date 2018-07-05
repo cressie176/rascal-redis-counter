@@ -1,6 +1,6 @@
 {
   "name": "rascal-redis-counter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A redis backed counter for Rascal",
   "main": "index.js",
   "scripts": {
