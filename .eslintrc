@@ -1,0 +1,8 @@
+{
+  "extends": "imperative",
+  "rules": {
+    "comma-dangle": [2, "only-multiline"],
+    "indent": ["error", 2],
+    "semi": [2, "always"]
+  }
+}
