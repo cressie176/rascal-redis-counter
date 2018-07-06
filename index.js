@@ -3,13 +3,21 @@ var defaults = require('lodash.defaultsdeep');
 
 module.exports = function init(options) {
 
+  var maxConnectionRetry = options.maxConnectionRetry || 30000;
+  var minConnectionRetry = options.minConnectionRetry || 1000;
+  var connectionRetryFluctuation = options.connectionRetryFluctuation || 1000;
+
   var config = defaults({}, options, {
     client: {
       prefix: 'rascal:',
       no_ready_check: true,
       enable_offline_queue: false,
       retry_strategy: function(retryOptions) {
-        return Math.min(retryOptions.attempt * 100, 3000);
+        var fluctuation = Math.floor(Math.random() * connectionRetryFluctuation);
+        var exponentialRetry = retryOptions.attempt * minConnectionRetry;
+        var variableRetry = exponentialRetry + fluctuation;
+        var actualRetry = Math.min(variableRetry, maxConnectionRetry);
+        return actualRetry;
       }
     },
     expire: 60000,
