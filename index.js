@@ -3,6 +3,7 @@ var defaults = require('lodash.defaultsdeep');
 
 module.exports = function init(options) {
 
+  options = options || {};
   var maxConnectionRetry = options.maxConnectionRetry || 30000;
   var minConnectionRetry = options.minConnectionRetry || 1000;
   var connectionRetryFluctuation = options.connectionRetryFluctuation || 1000;
