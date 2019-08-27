@@ -18,15 +18,15 @@
   "author": "Stephen Cresswell",
   "license": "ISC",
   "devDependencies": {
-    "async": "^2.6.1",
-    "eslint": "^4.19.1",
-    "eslint-config-imperative": "^2.0.1",
-    "eslint-plugin-imperative": "^2.0.0",
-    "mocha": "^5.2.0"
+    "async": "^3.1.0",
+    "eslint": "^6.2.2",
+    "eslint-config-imperative": "^3.0.0",
+    "eslint-plugin-imperative": "^3.0.0",
+    "mocha": "^6.2.0"
   },
   "dependencies": {
     "forward-emitter": "^0.1.1",
-    "lodash.defaultsdeep": "^4.6.0",
+    "lodash.defaultsdeep": "^4.6.1",
     "redis": "^2.8.0"
   },
   "directories": {
