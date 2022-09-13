@@ -47,7 +47,7 @@ A redis backed redelivery counter for [rascal](https://www.npmjs.com/package/ras
       }
     }
   }
-};
+}
 ```
 
 #### Instantiate the Rascal with the redis counter
