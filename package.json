@@ -22,7 +22,7 @@
     "eslint": "^6.2.2",
     "eslint-config-imperative": "^3.0.0",
     "eslint-plugin-imperative": "^3.0.0",
-    "mocha": "^6.2.0"
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "forward-emitter": "^0.1.1",
